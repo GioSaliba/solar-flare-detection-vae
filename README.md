@@ -12,7 +12,7 @@ and temporal attention.
 
 Solar flares are sudden, intense bursts of radiation that can disrupt
 satellites, navigation, communications, and power grids. They are also **rare**,
-which makes them hard to model with an ordinary supervised classifier — a model
+which makes them hard to model with an ordinary supervised classifier, so a model
 can score deceptively well just by always predicting "quiet."
 
 This project reframes flare detection as **anomaly detection**. A variational
@@ -50,7 +50,7 @@ split described under [Method details](#method-details), which removes that
 overlap; re-running it yields more conservative held-out figures on the
 threshold-dependent metrics (precision, recall, F1, accuracy). Ranking
 performance (ROC-AUC) is driven mainly by the unsupervised reconstruction and
-latent-distance signals — learned only from quiet-Sun data, never from flares —
+latent-distance signals, learned only from quiet-Sun data, never from flares, 
 and so is expected to be the most robust of the numbers below.
 
 | Metric      | Score |
@@ -109,7 +109,7 @@ The code expects:
 pip install torch numpy pandas opencv-python scikit-learn matplotlib tqdm
 ```
 
-A CUDA-capable GPU is recommended for training but not required — the code falls
+A CUDA-capable GPU is recommended for training but not required as the code falls
 back to CPU automatically (mixed precision is used only on GPU).
 
 ## Usage
