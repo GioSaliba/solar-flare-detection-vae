@@ -1,0 +1,23 @@
+# Data (NASA SDO/AIA imagery — not redistributed by this project)
+*.npy
+*.csv
+
+# Model weights (too large for git; regenerate with --train)
+*.pth
+
+# Generated outputs
+*.png
+*.txt
+training_log.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
