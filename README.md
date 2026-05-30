@@ -89,7 +89,7 @@ anomaly_heatmap_flare_*.png  # per-frame reconstruction-error heatmaps
 
 ## Data
 
-The NASA SDO/AIA imagery is **not included** in this repository — it is large
+The NASA SDO/AIA imagery is **not included** in this repository. It is large
 and is distributed by NASA, not by this project. Such data is publicly available
 from NASA's Solar Dynamics Observatory archive (e.g. JSOC or Helioviewer).
 
